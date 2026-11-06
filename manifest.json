@@ -1,0 +1,29 @@
+{
+  "versione": 1,
+  "data": "2026-11-06",
+  "note": "Versione iniziale",
+  "files": [
+    {"path": "app.js", "sha256": "6fec1d088ab3be83db670d1d7dc80e5bcc7bafdd1b3b53a4b1a302539a732df4"},
+    {"path": "app2.js", "sha256": "5392fef1389479733cb6709e86be49b698ce45b9736c0dd84729fea28b1ffa99"},
+    {"path": "app3.js", "sha256": "5c2743f6e8760ff45c942f2d3db46be5edfe829ba854bf723fc8a6774b3ad390"},
+    {"path": "app4.js", "sha256": "46fa3e22e491bab55ea8071dbb67ba6a422ae76cb4258daac2b0e8b2ae502093"},
+    {"path": "app5.js", "sha256": "1c4c10f77c19942fdf3c795a60f7d499bedf86debd1b7b1f72898466203aeb61"},
+    {"path": "data.js", "sha256": "be8cd82fcd6cfc91f3eb13f96f3d4465a537f2a66223ffbffa5b84c165a04108"},
+    {"path": "data2.js", "sha256": "441df0633b6e6de4a295d537bd158d7b18f59d0c35b495cde6d11fa3f9e9176e"},
+    {"path": "data3.js", "sha256": "c42f095f69913829bbe090217b388304a1d5d0b99f59c730009f2335276abcb1"},
+    {"path": "data4.js", "sha256": "a3827b86302f87868716c80074ffc77307e8fd3c97e06ca9d9e611ee8dd1f6d1"},
+    {"path": "estetica.css", "sha256": "cccfb920424df96e9d7536cee8b847cd8a89a8c8246102d3d2b5492165e93fe0"},
+    {"path": "foto/alberobello.jpg", "sha256": "f58606c19ae94860c114f90f5be94850b97f125f7b8631c129dc4c7a563d0219"},
+    {"path": "foto/amalfi.jpg", "sha256": "9c9a3182aa0b126d5c875008291ebd89ca8f55f0a11b05bebb269e57c4a5b877"},
+    {"path": "foto/colosseo.jpg", "sha256": "9a9bb7cf7e11a5523ab7c2c775972c402d6d461c52c50105334d72e3e3ffc5e1"},
+    {"path": "foto/crediti.js", "sha256": "5919eb8ae919e229a2698ce85284bc2d011195e3419b7b4b1298461b9e13161f"},
+    {"path": "foto/dolomiti.jpg", "sha256": "2071e6fcf3d4892f62f8b9b34ddb120fa11847c9356791b33a781824f89e35c6"},
+    {"path": "foto/firenze.jpg", "sha256": "135b6e9b0990dbff201ac63b365adf02650196a225f9d35afcf57b1b03858d38"},
+    {"path": "foto/molfetta.jpg", "sha256": "5d9fec5b9b4c2f5b2153d64255afa0d75f62082b93198f78be4dc582a10697de"},
+    {"path": "foto/palermo.jpg", "sha256": "11c1adfa13e1a69dab74e60862a6b052a20fa2dd860bad2941893f11657e159a"},
+    {"path": "foto/sardegna.jpg", "sha256": "35dd8ae596e6821f6532f63717b33c066fbf62e2921793fca3cac6168be64a2c"},
+    {"path": "foto/taranto.jpg", "sha256": "cfdb5db4ea1047329e337700f7d74534b2feb2a5b3062d8cf28dda1fa4f7391b"},
+    {"path": "foto/venezia.jpg", "sha256": "1b27681b6cfffc9a43d92919d9c251d201358fea873e74038797743de19571bf"},
+    {"path": "index.html", "sha256": "2d5d0c153d0cf9979bcaffcae244d4814f1fc9489dc80c3c2ef5bccab96c995a"}
+  ]
+}

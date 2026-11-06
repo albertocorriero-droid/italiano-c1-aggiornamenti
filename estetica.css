@@ -1,0 +1,86 @@
+/* Estetica: più colore, sfumature, foto. Si sovrappone agli stili base di index.html. */
+:root{
+  --pink:#ff6b8b; --pink2:#ffe3ea; --gold:#f2b84b; --gold2:#fff3d6; --sky:#4aa3e8; --sky2:#e2f1fd;
+  --lav:#8e7dd9; --lav2:#ece8fb; --green:#2e9e6b; --green2:#dff5ea; --red:#d94a4a; --red2:#fde6e6;
+}
+@media (prefers-color-scheme:dark){:root{
+  --pink:#ff7f9c; --pink2:#3a2230; --gold:#f5c768; --gold2:#3a3220; --sky:#6bb6f0; --sky2:#1d2d3d;
+  --lav:#a597e8; --lav2:#2a2640; --green:#4cc58a; --green2:#1b3128; --red:#ff7b6b; --red2:#3a2222;
+}}
+body{background:var(--bg) radial-gradient(circle at 12% 8%, var(--pink2) 0, transparent 38%), radial-gradient(circle at 92% 20%, var(--sky2) 0, transparent 34%), radial-gradient(circle at 50% 100%, var(--gold2) 0, transparent 40%);background-attachment:fixed}
+
+/* Intestazione con striscia tricolore */
+header{background:color-mix(in srgb, var(--bg) 86%, transparent);backdrop-filter:blur(8px);border-bottom:none;position:sticky;border-image:none;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+header::before{content:"";display:block;height:5px;margin:-10px -16px 8px;background:linear-gradient(90deg,var(--green) 0 33.3%,#fff 33.3% 66.6%,var(--red) 66.6% 100%)}
+.top h1{font-size:1.2rem;background:linear-gradient(90deg,var(--pink),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.top h1::after{content:" 💗";-webkit-text-fill-color:initial}
+.badge{background:linear-gradient(90deg,var(--lav2),var(--sky2));color:var(--lav)}
+
+/* Menu a colori */
+nav a{border-radius:99px;transition:.15s}
+nav:not(.sub) a:nth-child(1).on{background:linear-gradient(135deg,#ff6b8b,#f2b84b)}
+nav:not(.sub) a:nth-child(2).on{background:linear-gradient(135deg,#4aa3e8,#8e7dd9)}
+nav:not(.sub) a:nth-child(3).on{background:linear-gradient(135deg,#2e9e6b,#4aa3e8)}
+nav:not(.sub) a:nth-child(4).on{background:linear-gradient(135deg,#8e7dd9,#ff6b8b)}
+nav:not(.sub) a:nth-child(5).on{background:linear-gradient(135deg,#f2b84b,#e07a3f)}
+nav:not(.sub) a:nth-child(6).on{background:linear-gradient(135deg,#ff6b8b,#d94a4a)}
+nav:not(.sub) a:nth-child(7).on{background:linear-gradient(135deg,#2e9e6b,#f2b84b)}
+nav:not(.sub) a:hover{background:var(--soft)}
+nav.sub a.on{background:var(--pink2);color:var(--pink)}
+
+/* Carte colorate */
+.card{border:none;box-shadow:0 8px 24px rgba(40,40,80,.08);border-top:4px solid var(--sky);border-radius:18px}
+main>.card:nth-of-type(5n+1){border-top-color:var(--pink)}
+main>.card:nth-of-type(5n+2){border-top-color:var(--gold)}
+main>.card:nth-of-type(5n+3){border-top-color:var(--green)}
+main>.card:nth-of-type(5n+4){border-top-color:var(--lav)}
+main>.card:nth-of-type(5n){border-top-color:var(--sky)}
+.tip{background:var(--lav2);border-left:4px solid var(--lav)}
+.tip:nth-of-type(2n){background:var(--gold2);border-left-color:var(--gold)}
+.tip:nth-of-type(3n){background:var(--green2);border-left-color:var(--green)}
+.stat{background:var(--sky2)}
+.stat:nth-child(2){background:var(--pink2)} .stat:nth-child(3){background:var(--gold2)} .stat:nth-child(4){background:var(--green2)} .stat:nth-child(5){background:var(--lav2)} .stat:nth-child(6){background:var(--red2)}
+.big{background:linear-gradient(90deg,var(--pink),var(--lav));-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{background:linear-gradient(90deg,var(--ink),var(--lav));-webkit-background-clip:text;background-clip:text;color:transparent}
+.ok{color:var(--green)} .ko{color:var(--red)}
+.pill{background:var(--lav2);color:var(--lav)}
+.chip.on{background:linear-gradient(135deg,var(--lav),var(--pink));border-color:transparent}
+.bar>i,.bars i{background:linear-gradient(90deg,var(--green),var(--sky))}
+.bars i.low{background:linear-gradient(180deg,var(--gold),var(--pink))}
+
+/* Pulsanti */
+.btn{background:linear-gradient(135deg,var(--green),var(--sky));box-shadow:0 4px 12px rgba(46,158,107,.25);transition:transform .12s, box-shadow .12s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(46,158,107,.3)}
+.btn.alt{background:transparent;box-shadow:none;color:var(--lav);border:1px solid var(--lav)}
+.btn.rec-on{background:linear-gradient(135deg,var(--red),var(--pink))}
+
+/* Foto in primo piano (hero) */
+.hero{position:relative;min-height:230px;border:none;border-radius:22px;color:#fff;background-size:cover;background-position:center;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:20px;border-top:none!important}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 0%,rgba(20,10,40,.62) 100%)}
+.hero>*{position:relative}
+.hero h2{background:none;-webkit-text-fill-color:#fff;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.45);font-size:2rem;margin:0}
+.hero .mute{color:#ffeaf0;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.hero .credit{position:absolute;right:12px;top:10px;font-size:.72rem;color:#fff;background:rgba(0,0,0,.38);padding:2px 8px;border-radius:99px;text-decoration:none}
+.hero .luogo{position:absolute;left:14px;top:10px;font-size:.8rem;color:#fff;background:rgba(0,0,0,.38);padding:2px 10px;border-radius:99px}
+.hero .btn.alt{color:#fff;border-color:#fff}
+.hero .ar{color:#fff}
+
+/* Pillole */
+.pillola{border-top-color:var(--gold)!important;background:linear-gradient(135deg,var(--gold2),var(--card))}
+#pop{position:fixed;left:16px;bottom:84px;z-index:14;max-width:360px;background:var(--card);border-radius:18px;padding:14px 16px;box-shadow:0 14px 40px rgba(0,0,0,.28);border-top:5px solid var(--gold);animation:pop .35s ease}
+#pop b{display:block;margin-bottom:2px}
+@keyframes pop{from{transform:translateY(18px);opacity:0}to{transform:none;opacity:1}}
+
+/* Pulsante cuore (emergenza) */
+.fab-sos{position:fixed;left:16px;bottom:16px;z-index:12;height:54px;border-radius:99px;border:0;padding:0 18px;background:linear-gradient(135deg,var(--pink),var(--red));color:#fff;font:inherit;font-weight:700;cursor:pointer;box-shadow:0 8px 22px rgba(217,74,74,.4);animation:beat 1.8s ease-in-out infinite}
+@keyframes beat{0%,100%{transform:scale(1)}8%{transform:scale(1.07)}16%{transform:scale(1)}24%{transform:scale(1.05)}32%{transform:scale(1)}}
+.sos-btn{display:flex;align-items:center;gap:10px;width:100%;text-align:left;margin:6px 0;padding:12px 14px;border:0;border-radius:14px;background:var(--pink2);color:var(--ink);font:inherit;font-size:1.05rem;cursor:pointer}
+.sos-btn:hover{background:var(--gold2)}
+.sos-btn span{font-size:1.5rem}
+
+/* Galleria */
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.gal figure{margin:0;background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,.1)}
+.gal img{display:block;width:100%;height:170px;object-fit:cover}
+.gal figcaption{padding:8px 10px;font-size:.82rem}
+@media (max-width:600px){.hero h2{font-size:1.5rem}.fab-sos span.t{display:none}#pop{max-width:calc(100% - 32px)}}

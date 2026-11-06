@@ -15,8 +15,9 @@ App locale di italiano C1 e dizione per Aya (giornalista, madrelingua arabo tuni
 1. `git pull`, poi modifica i file dei contenuti (di solito `data*.js`).
 2. Spiegazioni sempre in italiano + arabo tunisino. Testi nuovi in italiano: rivederli perché suonino naturali.
 3. Controlla che i file `.js` non abbiano errori di sintassi (es. `node --check data.js`).
-4. `./pubblica.sh "Nota breve su cosa è cambiato"` → aumenta la versione, calcola gli hash, fa commit e push.
-5. Aya clicca «Scarica aggiornamento». La nota che scrivi è quella che legge lei.
+4. Aggiungi in fondo a `novita.js` la voce della nuova versione (v = versione attuale di `manifest.json` + 1), in italiano e arabo tunisino: Aya la vede nella finestra «Novità» dopo l'aggiornamento.
+5. `./pubblica.sh "Nota breve su cosa è cambiato"` → aumenta la versione, calcola gli hash, fa commit e push.
+6. Aya clicca «Scarica aggiornamento». La nota che scrivi è quella che legge lei.
 
 ## Regole
 - Nomi di file solo con lettere, numeri, `_`, `-`, `.`, `/` (lo script rifiuta gli altri).

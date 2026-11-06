@@ -1,18 +1,20 @@
 {
-  "versione": 3,
+  "versione": 4,
   "data": "2026-11-06",
-  "note": "Avviso automatico quando c'è un aggiornamento",
+  "note": "Letture lunghe e giudizio dopo ogni registrazione",
   "files": [
     {"path": "app.js", "sha256": "6fec1d088ab3be83db670d1d7dc80e5bcc7bafdd1b3b53a4b1a302539a732df4"},
     {"path": "app2.js", "sha256": "5392fef1389479733cb6709e86be49b698ce45b9736c0dd84729fea28b1ffa99"},
     {"path": "app3.js", "sha256": "5c2743f6e8760ff45c942f2d3db46be5edfe829ba854bf723fc8a6774b3ad390"},
     {"path": "app4.js", "sha256": "46fa3e22e491bab55ea8071dbb67ba6a422ae76cb4258daac2b0e8b2ae502093"},
-    {"path": "app5.js", "sha256": "d38245abf475ad8fdc00e4c13dddbad0e9a109d5ffafb95a7cf22bb2c96357f2"},
+    {"path": "app5.js", "sha256": "cefb27e4016886a2abfdf56550c6b4856ce9014751f2f9ec9079080a826c5e7c"},
+    {"path": "app6.js", "sha256": "b7aeac0d0947a04d8bfa80aa1243d64f1275b2ba3a12bee424c3eb19244b6966"},
     {"path": "data.js", "sha256": "be8cd82fcd6cfc91f3eb13f96f3d4465a537f2a66223ffbffa5b84c165a04108"},
     {"path": "data2.js", "sha256": "441df0633b6e6de4a295d537bd158d7b18f59d0c35b495cde6d11fa3f9e9176e"},
     {"path": "data3.js", "sha256": "c42f095f69913829bbe090217b388304a1d5d0b99f59c730009f2335276abcb1"},
     {"path": "data4.js", "sha256": "a3827b86302f87868716c80074ffc77307e8fd3c97e06ca9d9e611ee8dd1f6d1"},
     {"path": "data5.js", "sha256": "b9d1474ca4e54c74612d7b7dddbcba7fb8893ca841763a0a17815668634f67dd"},
+    {"path": "data6.js", "sha256": "dece22bf060e5bfc97b995cbcc2609b7bb4e1cf81d10da995fbc190ba6277728"},
     {"path": "estetica.css", "sha256": "cccfb920424df96e9d7536cee8b847cd8a89a8c8246102d3d2b5492165e93fe0"},
     {"path": "foto/alberobello.jpg", "sha256": "f58606c19ae94860c114f90f5be94850b97f125f7b8631c129dc4c7a563d0219"},
     {"path": "foto/amalfi.jpg", "sha256": "9c9a3182aa0b126d5c875008291ebd89ca8f55f0a11b05bebb269e57c4a5b877"},
@@ -25,6 +27,7 @@
     {"path": "foto/sardegna.jpg", "sha256": "35dd8ae596e6821f6532f63717b33c066fbf62e2921793fca3cac6168be64a2c"},
     {"path": "foto/taranto.jpg", "sha256": "cfdb5db4ea1047329e337700f7d74534b2feb2a5b3062d8cf28dda1fa4f7391b"},
     {"path": "foto/venezia.jpg", "sha256": "1b27681b6cfffc9a43d92919d9c251d201358fea873e74038797743de19571bf"},
-    {"path": "index.html", "sha256": "a9f6df2b02e6290963e7b7d42727dd10c2ae71c1523c80b048084c9b66556200"}
+    {"path": "index.html", "sha256": "377fcc38ba7398877f804d64ffe9722ffd39598ac1c084cf1c92c6938ee6dc20"},
+    {"path": "novita.js", "sha256": "165404b81d6859798d241247206b65025fce6d0c91a5eabda93d67e79d0a5976"}
   ]
 }

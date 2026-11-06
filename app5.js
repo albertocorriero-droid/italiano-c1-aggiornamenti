@@ -64,3 +64,39 @@ GROUPS[6][1].push(['aggiorna', 'Aggiorna il programma']);
   setTimeout(controlla, 1500);
   setInterval(controlla, 30 * 60 * 1000);
 })();
+
+/* ---------- Novità: cosa è cambiato in ogni versione ---------- */
+(function novitaVersioni() {
+  const N = (window.DATA && D.novita) || [];
+  if (!N.length) return;
+  const ultima = Math.max(...N.map(n => n.v));
+  const voce = n => '<div style="margin:10px 0;text-align:left"><b>Versione ' + n.v + '</b> <small class="mute">' + esc(n.data) + '</small>' +
+    '<ul style="margin:4px 0">' + n.it.map(t => '<li>' + esc(t) + '</li>').join('') + '</ul>' +
+    (n.ar ? '<div class="ar" style="direction:rtl">' + esc(n.ar) + '</div>' : '') + '</div>';
+  // Cronologia completa in fondo alla pagina «Aggiorna il programma»
+  const vistaAggiorna = VIEWS.aggiorna;
+  VIEWS.aggiorna = function () {
+    vistaAggiorna();
+    main.insertAdjacentHTML('beforeend', '<div class="card"><h3>Novità di ogni versione <span class="ar" style="display:inline">· الجديد في كل نسخة</span></h3>' +
+      N.slice().reverse().map(voce).join('') + '</div>');
+  };
+  // Finestra «Novità» dopo un aggiornamento (una volta sola per versione)
+  const mostra = () => {
+    const vista = S.novitaVista || 1;
+    if (ultima <= vista || document.getElementById('nov-popup')) return;
+    const d = document.createElement('div');
+    d.id = 'nov-popup';
+    d.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:99998;display:flex;align-items:center;justify-content:center';
+    d.innerHTML = '<div style="background:var(--card,#fff);color:var(--ink,#1d2433);border-radius:16px;padding:24px 28px;max-width:480px;max-height:80vh;overflow:auto;box-shadow:0 10px 40px rgba(0,0,0,.3);font-size:16px">' +
+      '<div style="text-align:center"><div style="font-size:42px">✨</div><h2 style="margin:8px 0">Novità</h2><div class="ar" style="direction:rtl">الجديد</div></div>' +
+      N.filter(n => n.v > vista).reverse().map(voce).join('') +
+      '<div style="text-align:center;margin-top:16px"><button id="nov-ok">Ho capito</button></div></div>';
+    document.body.appendChild(d);
+    document.getElementById('nov-ok').onclick = () => { d.remove(); S.novitaVista = ultima; save(); };
+  };
+  // Aspetta che i progressi di Aya siano caricati (S.start viene impostato da load())
+  let tentativi = 0;
+  const attendi = setInterval(() => {
+    if (S.start || ++tentativi > 40) { clearInterval(attendi); if (S.start) mostra(); }
+  }, 500);
+})();

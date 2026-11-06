@@ -1,7 +1,7 @@
 {
-  "versione": 1,
+  "versione": 2,
   "data": "2026-11-06",
-  "note": "Versione iniziale",
+  "note": "Dizione: tante parole ed esercizi nuovi",
   "files": [
     {"path": "app.js", "sha256": "6fec1d088ab3be83db670d1d7dc80e5bcc7bafdd1b3b53a4b1a302539a732df4"},
     {"path": "app2.js", "sha256": "5392fef1389479733cb6709e86be49b698ce45b9736c0dd84729fea28b1ffa99"},
@@ -12,6 +12,7 @@
     {"path": "data2.js", "sha256": "441df0633b6e6de4a295d537bd158d7b18f59d0c35b495cde6d11fa3f9e9176e"},
     {"path": "data3.js", "sha256": "c42f095f69913829bbe090217b388304a1d5d0b99f59c730009f2335276abcb1"},
     {"path": "data4.js", "sha256": "a3827b86302f87868716c80074ffc77307e8fd3c97e06ca9d9e611ee8dd1f6d1"},
+    {"path": "data5.js", "sha256": "b9d1474ca4e54c74612d7b7dddbcba7fb8893ca841763a0a17815668634f67dd"},
     {"path": "estetica.css", "sha256": "cccfb920424df96e9d7536cee8b847cd8a89a8c8246102d3d2b5492165e93fe0"},
     {"path": "foto/alberobello.jpg", "sha256": "f58606c19ae94860c114f90f5be94850b97f125f7b8631c129dc4c7a563d0219"},
     {"path": "foto/amalfi.jpg", "sha256": "9c9a3182aa0b126d5c875008291ebd89ca8f55f0a11b05bebb269e57c4a5b877"},
@@ -24,6 +25,6 @@
     {"path": "foto/sardegna.jpg", "sha256": "35dd8ae596e6821f6532f63717b33c066fbf62e2921793fca3cac6168be64a2c"},
     {"path": "foto/taranto.jpg", "sha256": "cfdb5db4ea1047329e337700f7d74534b2feb2a5b3062d8cf28dda1fa4f7391b"},
     {"path": "foto/venezia.jpg", "sha256": "1b27681b6cfffc9a43d92919d9c251d201358fea873e74038797743de19571bf"},
-    {"path": "index.html", "sha256": "2d5d0c153d0cf9979bcaffcae244d4814f1fc9489dc80c3c2ef5bccab96c995a"}
+    {"path": "index.html", "sha256": "a9f6df2b02e6290963e7b7d42727dd10c2ae71c1523c80b048084c9b66556200"}
   ]
 }

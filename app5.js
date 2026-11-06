@@ -42,3 +42,25 @@ function viewAggiorna() {
 }
 VIEWS.aggiorna = viewAggiorna;
 GROUPS[6][1].push(['aggiorna', 'Aggiorna il programma']);
+
+/* ---------- Avviso automatico: c'è un aggiornamento ---------- */
+(function avvisoAggiornamento() {
+  const mostra = r => {
+    if (document.getElementById('upd-popup')) return;
+    const d = document.createElement('div');
+    d.id = 'upd-popup';
+    d.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:99999;display:flex;align-items:center;justify-content:center';
+    d.innerHTML = '<div style="background:var(--card,#fff);color:var(--ink,#1d2433);border-radius:16px;padding:24px 28px;max-width:420px;box-shadow:0 10px 40px rgba(0,0,0,.3);text-align:center;font-size:17px">' +
+      '<div style="font-size:42px">🎁</div><h2 style="margin:8px 0">C\'è un aggiornamento!</h2>' +
+      '<p>' + esc(r.note || 'Nuovi contenuti per te.') + '</p>' +
+      '<p class="ar" style="direction:rtl">فمّة تحديث جديد!</p>' +
+      '<div style="margin-top:16px"><button id="upd-pop-si">Aggiorna ora</button> <button id="upd-pop-no" class="ghost">Più tardi</button></div></div>';
+    document.body.appendChild(d);
+    document.getElementById('upd-pop-no').onclick = () => d.remove();
+    document.getElementById('upd-pop-si').onclick = () => { d.remove(); location.hash = '#/aggiorna'; };
+  };
+  const controlla = () => fetch('/api/update/check').then(r => r.json())
+    .then(r => { if (r.ok && r.aggiornabile) mostra(r); }).catch(() => {});
+  setTimeout(controlla, 1500);
+  setInterval(controlla, 30 * 60 * 1000);
+})();

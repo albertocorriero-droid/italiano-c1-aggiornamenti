@@ -1,13 +1,13 @@
 {
-  "versione": 2,
+  "versione": 3,
   "data": "2026-11-06",
-  "note": "Dizione: tante parole ed esercizi nuovi",
+  "note": "Avviso automatico quando c'è un aggiornamento",
   "files": [
     {"path": "app.js", "sha256": "6fec1d088ab3be83db670d1d7dc80e5bcc7bafdd1b3b53a4b1a302539a732df4"},
     {"path": "app2.js", "sha256": "5392fef1389479733cb6709e86be49b698ce45b9736c0dd84729fea28b1ffa99"},
     {"path": "app3.js", "sha256": "5c2743f6e8760ff45c942f2d3db46be5edfe829ba854bf723fc8a6774b3ad390"},
     {"path": "app4.js", "sha256": "46fa3e22e491bab55ea8071dbb67ba6a422ae76cb4258daac2b0e8b2ae502093"},
-    {"path": "app5.js", "sha256": "1c4c10f77c19942fdf3c795a60f7d499bedf86debd1b7b1f72898466203aeb61"},
+    {"path": "app5.js", "sha256": "d38245abf475ad8fdc00e4c13dddbad0e9a109d5ffafb95a7cf22bb2c96357f2"},
     {"path": "data.js", "sha256": "be8cd82fcd6cfc91f3eb13f96f3d4465a537f2a66223ffbffa5b84c165a04108"},
     {"path": "data2.js", "sha256": "441df0633b6e6de4a295d537bd158d7b18f59d0c35b495cde6d11fa3f9e9176e"},
     {"path": "data3.js", "sha256": "c42f095f69913829bbe090217b388304a1d5d0b99f59c730009f2335276abcb1"},

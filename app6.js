@@ -150,7 +150,7 @@
       '<div class="card"><h3>' + esc(L.titolo) + ' <span class="pill">' + esc(L.genere) + '</span></h3><div class="tip">' + esc(L.nota) + '<div class="ar">' + esc(L.ar) + '</div></div>' + voiceWarn() +
       L.par.map((p, j) => '<div class="card" style="margin:12px 0"><div class="mute">Paragrafo ' + (j + 1) + ' di ' + L.par.length + '</div><p style="font-size:1.15rem;line-height:1.9">' + esc(p) + '</p>' +
         '<div class="row"><button class="btn alt sp" data-j="' + j + '" data-r=".95">🔊 Modello</button><button class="btn alt sp" data-j="' + j + '" data-r=".7">🐢 Lento</button></div><div id="llp' + j + '"></div></div>').join('') +
-      '<div class="card" style="margin:12px 0"><h3>Tutto il testo di seguito</h3><div class="mute">Quando ti senti pronta, registra l\'intero testo senza fermarti (circa 2 minuti).</div><div id="lltutto"></div></div></div>';
+      '<div class="card" style="margin:12px 0"><h3>Tutto il testo di seguito</h3><div class="mute">Quando ti senti pronta, registra l\'intero testo senza fermarti (circa 2-3 minuti).</div><div id="lltutto"></div></div></div>';
     $$('.chip').forEach(c => c.onclick = () => { idxLL = +c.dataset.i; viewLettureLunghe(); });
     $$('.sp').forEach(b => b.onclick = () => speak(L.par[+b.dataset.j], +b.dataset.r));
     L.par.forEach((p, j) => registraConGiudizio($('#llp' + j), { tag: 'lunga-' + L.id + '-p' + (j + 1), target: p, onDone: () => markDone('lettura') }));

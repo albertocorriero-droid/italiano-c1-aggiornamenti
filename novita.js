@@ -18,7 +18,10 @@
         'Parlato libero: dopo la registrazione ricevi un giudizio su durata, fluidità, connettori e varietà delle parole. 32 argomenti e 15 connettori nuovi, e il pulsante «Un altro argomento».',
         'Il giudizio ti dice anche quali parole ripetere, quale esercizio fare e se stai migliorando rispetto all\'ultima volta. Funziona in Chrome.',
         'Dopo ogni aggiornamento compare questa finestra «Novità». La cronologia completa è nella pagina «Aggiorna il programma».'],
-      ar: 'جديد: «Letture lunghe» فيها 12 نص طويل تسجّلهم، وبعد كل تسجيل يجيك تقييم. وفي «Parlato libero» زادة يجيك تقييم: المدّة، السلاسة، أدوات الربط وتنوّع الكلمات. التقييم يقولك شنوّة تعاود وإذا قاعدة تتحسّن. يخدم في Chrome.' }
+      ar: 'جديد: «Letture lunghe» فيها 12 نص طويل تسجّلهم، وبعد كل تسجيل يجيك تقييم. وفي «Parlato libero» زادة يجيك تقييم: المدّة، السلاسة، أدوات الربط وتنوّع الكلمات. التقييم يقولك شنوّة تعاود وإذا قاعدة تتحسّن. يخدم في Chrome.' },
+    { v: 5, data: '2026-11-07',
+      it: ['Letture lunghe più lunghe: ogni testo ha ora 6 o 7 paragrafi, 300-350 parole (2-3 minuti di lettura).'],
+      ar: 'النصوص الطويلة ولّات أطول: كل نص فيه 6 ولّا 7 فقرات، بين 300 و350 كلمة (دقيقتين لثلاثة دقايق قراية).' }
   ];
   // Il riquadro «Aggiornamenti del programma» nel Piano legge questo elenco (dal più recente).
   D.aggiornamenti = D.novita.slice().reverse().map(n => ({ data: n.data, testo: 'Versione ' + n.v + ': ' + n.it.join(' ') }));

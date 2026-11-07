@@ -152,4 +152,58 @@
 
   /* ---------- Connettori in più ---------- */
   D.connettori.push('inoltre', 'infatti', 'quindi', 'invece', 'perciò', 'eppure', 'insomma', 'innanzitutto', 'infine', 'anzi', 'cioè', 'di conseguenza', 'in altre parole', 'per esempio', 'allo stesso tempo');
+
+  /* ---------- Letture lunghe: paragrafi in più (versione 5), inseriti prima del paragrafo finale ---------- */
+  const piu = {
+    LL1: [
+      "Spostiamoci in cronaca. Nella notte i vigili del fuoco sono intervenuti in un capannone della zona industriale, dove si era sviluppato un incendio. Le fiamme sono state spente dopo circa tre ore di lavoro. Non ci sono feriti, ma i danni alla struttura sono ingenti. Sulle cause sono in corso accertamenti: al momento nessuna ipotesi viene esclusa.",
+      "Restiamo in città: da lunedì cambia la viabilità in via Garibaldi, chiusa al traffico per i lavori di rifacimento delle fognature. I cantieri dureranno circa sei settimane. Il comune consiglia di utilizzare i parcheggi di scambio e le linee di autobus potenziate per l'occasione.",
+      "Nello sport, serata di festa per la squadra di pallavolo femminile della città, che ha conquistato la promozione nella serie superiore battendo in casa le avversarie per tre set a uno. Il palazzetto era esaurito da giorni. L'allenatrice, a fine partita, ha dedicato la vittoria alle ragazze del settore giovanile, «il vero futuro di questa società»."
+    ],
+    LL2: [
+      "Accanto ai pescatori lavorano le donne della cooperativa, che puliscono il pesce e preparano le cassette per i ristoranti. Hanno le mani arrossate dal freddo e dal ghiaccio, ma non smettono di scherzare tra loro. Una di loro, arrivata dalla Tunisia vent'anni fa, ricorda che nel suo paese il porto aveva lo stesso odore e lo stesso rumore. «Il mare è uguale dappertutto» dice «cambiano solo le parole per chiamare i pesci».",
+      "Intanto il cielo si schiarisce. Il grigio diventa rosa, poi arancione, e le facciate delle case affacciate sul porto si accendono una dopo l'altra. Qualche anziano arriva in bicicletta per comprare un chilo di alici direttamente dalla barca, come faceva da ragazzo. I prezzi qui sono più bassi che in pescheria, ma bisogna sapere a chi chiedere e, soprattutto, arrivare presto."
+    ],
+    LL3: [
+      "Domanda: Lei è nata in Italia da genitori stranieri. Si è mai sentita costretta a scegliere un'identità? Risposta: Da adolescente sì, moltissimo. A scuola ero «la straniera», quando tornavo d'estate al paese dei miei ero «l'italiana». Ci ho messo anni a capire che non dovevo scegliere: posso essere entrambe le cose, e anche qualcos'altro che non ha ancora un nome.",
+      "Domanda: Quali sono state le difficoltà maggiori durante le riprese? Risposta: Il budget, prima di tutto: abbiamo girato con una troupe di sette persone, spesso dormendo nelle case delle famiglie che ci ospitavano. Ma la difficoltà più grande è stata emotiva. Alcune scene toccavano ferite ancora aperte, e più di una volta abbiamo spento la telecamera per rispetto."
+    ],
+    LL4: [
+      "C'è poi la questione degli algoritmi, che selezionano per noi ciò che vediamo. Funzionano secondo una logica semplice: mostrarci di più di ciò che ci piace già. Il risultato è che ciascuno rischia di vivere in una bolla, circondato da opinioni simili alle proprie, mentre le voci diverse diventano sempre più lontane e, di conseguenza, sempre più incomprensibili.",
+      "Le conseguenze si vedono anche nel linguaggio. Il dibattito pubblico si è fatto più aggressivo, le sfumature sono scomparse, e chi prova a dire «dipende» viene accusato di non avere il coraggio delle proprie idee. Eppure il mondo è quasi sempre più complicato di uno slogan, e raccontarne la complessità è esattamente il compito del giornalismo."
+    ],
+    LL5: [
+      "Il marinaio si chiamava Salah, aveva i capelli bianchi e le mani grandi come pale. Le raccontò di una notte d'inverno in cui le onde erano così alte da coprire gli oblò, e di un'altra, molti anni prima, in cui aveva visto i delfini accompagnare la nave per ore. «Il mare ti mette alla prova» le disse «ma poi ti fa sempre un regalo».",
+      "Verso le tre la tempesta si calmò. Lei tornò sul ponte, avvolta nel maglione che profumava ancora di casa. Il cielo si era aperto e le stelle erano così numerose da sembrare finte. Pensò alla madre, che a quell'ora probabilmente dormiva, e alle sorelle, che le avevano fatto promettere di chiamare appena arrivata. Per la prima volta da giorni, si sentì tranquilla."
+    ],
+    LL6: [
+      "Prima della musica, permettetemi di presentarvi la giuria. Qui accanto a me ci sono cinque ragazze e cinque ragazzi che, nelle ultime settimane, hanno visto più di cento cortometraggi, discutendo per ore, a volte animatamente. Ci hanno raccontato che scegliere è stato difficilissimo: alcuni film li hanno fatti ridere, altri piangere, altri ancora arrabbiare. Che è proprio quello che il cinema deve fare.",
+      "Un'informazione pratica, prima di cominciare: durante la serata, nello spazio accanto alla fontana, trovate gli stand delle associazioni del territorio e un punto ristoro con piatti delle due sponde del Mediterraneo. Il ricavato andrà interamente alla scuola di musica del quartiere. Quindi mangiate, bevete e sentitevi generosi!"
+    ],
+    LL7: [
+      "Mentre parla, Maria non smette di lavorare. Infila l'ago al primo tentativo, senza occhiali, e prende le misure di una manica a occhio, con una precisione che stupisce. Ogni tanto alza lo sguardo verso la strada e saluta qualcuno: il fornaio, la farmacista, un ragazzo in bicicletta che le grida «ciao, zia!». Non è suo nipote, ma nel quartiere tutti la chiamano così.",
+      "Le chiedo quale sia stato il lavoro più difficile della sua carriera. Ci pensa un momento, poi sorride. Racconta di un abito da sposa da rifare in una notte, perché il giorno prima del matrimonio il cane della sposa l'aveva strappato. «Ho cucito fino alle cinque del mattino» dice «e alla cerimonia nessuno se n'è accorto. Quella è stata la mia soddisfazione più grande»."
+    ],
+    LL8: [
+      "La produzione è concentrata soprattutto nei paesi del bacino mediterraneo, da cui proviene la grande maggioranza dell'olio consumato nel mondo. La Spagna è di gran lunga il primo produttore; seguono, con quantità che variano molto da un anno all'altro, paesi come l'Italia, la Grecia, la Tunisia e la Turchia. In molte zone rurali l'olivicoltura è una delle principali fonti di reddito.",
+      "Negli ultimi anni, però, la coltivazione dell'ulivo affronta nuove minacce. Le estati sempre più calde e secche riducono i raccolti, e alcune malattie hanno colpito duramente intere zone. In Puglia, per esempio, milioni di alberi sono stati colpiti dalla Xylella, un batterio che li fa seccare. Ricercatori e agricoltori lavorano insieme per selezionare varietà più resistenti."
+    ],
+    LL9: [
+      "Esistono, inoltre, strategie concrete che aiutano a superare questa paura. Registrarsi e riascoltarsi, per esempio, all'inizio è imbarazzante, ma permette di accorgersi dei propri progressi. Leggere ad alta voce, ripetere le frasi dei telegiornali, cantare le canzoni che si amano: sono esercizi semplici, che allenano la bocca e l'orecchio a lavorare insieme.",
+      "Conta molto anche l'ambiente. Chi impara circondato da persone pazienti, che correggono con gentilezza senza interrompere ogni frase, progredisce più in fretta. Al contrario, chi si sente giudicato tende a chiudersi. Per questo anche chi è madrelingua ha una responsabilità: ascoltare con attenzione, senza sorridere degli errori e senza passare subito a un'altra lingua."
+    ],
+    LL10: [
+      "I lavori, costati circa quattro milioni di euro, sono stati finanziati in parte con fondi europei e in parte dal comune. Il progetto ha puntato molto sulla sostenibilità: sul tetto sono stati installati pannelli solari, le finestre sono state sostituite con vetri isolanti e il cortile interno è diventato una sala di lettura all'aperto, che sarà utilizzata nei mesi più caldi.",
+      "Tra i primi visitatori c'era anche un gruppo di anziani del quartiere, che ricordavano l'edificio quando era ancora un mercato. «Qui venivo a comprare la frutta con mia madre» ha raccontato, commosso, un signore di ottantacinque anni. «Adesso ci porterò i miei nipoti a prendere i libri. È bello che un posto così non sia andato perduto»."
+    ],
+    LL11: [
+      "Quando ho cominciato questo lavoro, molti mi dicevano che era una strada troppo difficile: una giornalista straniera, con un accento che si sentiva a ogni frase, in un mestiere in cui la voce è tutto. Ho avuto paura, lo ammetto. Ma ho scoperto che il mio accento, invece di essere un limite, a volte apriva delle porte: le persone si fidavano di me proprio perché sentivano che anch'io venivo da lontano.",
+      "Questo premio non arriva alla fine di un percorso, ma a metà strada. Ci sono ancora tantissime storie che aspettano di essere raccontate: nei quartieri, nelle campagne, nei porti, nelle cucine delle famiglie che nessuno intervista mai. Spero che questo riconoscimento aiuti anche altri giovani, soprattutto chi non si sente rappresentato, a credere che c'è spazio anche per la loro voce."
+    ],
+    LL12: [
+      "Prima di raggiungere il porto, entriamo un attimo in questo vicolo. Vedete le targhe con il nome della via? Sono scritte in tre lingue: italiano, ebraico e arabo. Ci ricordano che per secoli, in questa città, comunità diverse hanno vissuto a pochi metri l'una dall'altra, commerciando, discutendo e, a volte, sposandosi. Le città di mare sono sempre state luoghi d'incontro.",
+      "E ora una tappa golosa. In questa pasticceria, aperta da più di un secolo, si preparano dolci che raccontano la storia della città meglio di qualsiasi libro: le mandorle, i canditi, la cannella e l'acqua di fiori d'arancio sono arrivati da lontano, portati da mercanti e conquistatori. Vi lascio dieci minuti liberi: assaggiate, fotografate, e poi ci ritroviamo qui all'angolo."
+    ]
+  };
+  D.lettureLunghe.forEach(l => { if (piu[l.id]) l.par.splice(l.id === 'LL6' ? 1 : l.par.length - 1, 0, ...piu[l.id]); }); // LL6: subito dopo i saluti iniziali
 })();
